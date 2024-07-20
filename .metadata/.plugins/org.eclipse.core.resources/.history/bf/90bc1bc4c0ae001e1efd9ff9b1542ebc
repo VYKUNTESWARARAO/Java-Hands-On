@@ -1,0 +1,46 @@
+package com.pack1;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class ClassA 
+{
+	 Scanner sc=new Scanner(System.in);
+	void meth1() 
+	{
+		System.out.println("meth1() called");
+		String s1="java";
+		String s2= new String("java");
+		String s3="java";
+		String s4=new String("java");
+		
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals("JAVA"));
+		System.out.println(s1.equalsIgnoreCase("JAVA"));
+		System.out.println(s3.equals(s1));
+		System.out.println("java".equals("java"));
+		System.out.println(new String("java").equals("java"));
+		System.out.println(s3.equals(s4));
+		System.out.println("----------------------");
+		System.out.println(s1==s2);
+		System.out.println(s2==s3);
+		System.out.println(s1==s3);
+		System.out.println(s2==s4);
+		System.out.println();
+		System.out.println(s2==new String("java"));
+		System.out.println("java"==s1);
+		System.out.println("java"=="java");
+		System.out.println(new String("java")==new String("java"));
+		System.out.println("java"==new String("java"));
+		
+		
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		
+		ClassA aobj=new ClassA();
+		aobj.meth1();
+		
+	}
+}

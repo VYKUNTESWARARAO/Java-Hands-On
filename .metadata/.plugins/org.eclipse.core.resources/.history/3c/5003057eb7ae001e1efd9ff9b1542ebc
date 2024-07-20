@@ -1,0 +1,19 @@
+package com.pack1;
+import java.util.Scanner;
+
+public class ClassA 
+{
+	public boolean coomomnEnd(int[]a,int[]b) 
+	{
+		if((a.length &&b.length)>=1 && (a[0]))
+		return true;
+	}
+
+	public static void main(String[] args) 
+	{
+		
+		ClassA aobj=new ClassA();
+		System.out.println(result);
+		
+	}
+}
